@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>/posts/0/</url>
+    <content><![CDATA[<p><a href="https://blog.csdn.net/as480133937/article/details/100138838?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-100138838-blog-90712422.235%5Ev38%5Epc_relevant_default_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-100138838-blog-90712422.235%5Ev38%5Epc_relevant_default_base3&utm_relevant_index=5">https://blog.csdn.net/as480133937/article/details/100138838?spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-100138838-blog-90712422.235%5Ev38%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-100138838-blog-90712422.235%5Ev38%5Epc_relevant_default_base3&amp;utm_relevant_index=5</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Typora 语法详解</title>
+    <url>/posts/363fb101/</url>
+    <content><![CDATA[<h1 id="Typora语法详解"><a href="#Typora语法详解" class="headerlink" title="Typora语法详解"></a>Typora语法详解</h1><p>[toc]</p>
+<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><p><strong>1.# [一级标题]</strong></p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></blockquote>
+<p><strong>2.## [二级标题]</strong></p>
+<blockquote>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p>最多到六级，也可以用Ctrl+1（2，3，……，6）来表示，Ctrl+0 表示段落</p>
+<h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><p><strong>1.斜体：</strong></p>
+<p>​	*文本*  </p>
+<p>​	_文本_</p>
+<p>​    Ctrl+i</p>
+<blockquote>
+<p><em>文本</em></p>
+</blockquote>
+<p><strong>2.粗体：</strong></p>
+<p>​	**文本**</p>
+<p>​	__文本__</p>
+<p> Ctrl+b</p>
+<blockquote>
+<p><strong>文本</strong></p>
+</blockquote>
+<h2 id="三、线"><a href="#三、线" class="headerlink" title="三、线"></a>三、线</h2><p><strong>1.分割线</strong> </p>
+<p>+++</p>
+<p>***</p>
+<p>-–</p>
+<blockquote>
+<p>+++</p>
+</blockquote>
+<p><strong>2.删除线</strong></p>
+<p>~~文本~~</p>
+<p>Alt+Shift+5</p>
+<blockquote>
+<p><del>文本</del></p>
+</blockquote>
+<p><strong>3.下划线</strong></p>
+<p>&lt;u&gt;文本&lt;&#x2F;u&gt;</p>
+<p>Ctrl+U</p>
+<blockquote>
+<p><u>文本</u></p>
+</blockquote>
+<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><p><strong>1.无序列表</strong></p>
+<p>* [文本]</p>
+<p>+ [文本]</p>
+<p>- [文本]</p>
+<blockquote>
+<ul>
+<li>文本</li>
+</ul>
+</blockquote>
+<p><strong>2.有序列表</strong></p>
+<p>[数字]. [文本]</p>
+<blockquote>
+<ol>
+<li>文本</li>
+<li>文本</li>
+</ol>
+</blockquote>
+<p>数字并不重要</p>
+<p><strong>3.嵌套列表</strong></p>
+<p>* 一级 （回车）</p>
+<p>TAB * 二级  （回车）</p>
+<p>TAB TAB * 三级</p>
+<blockquote>
+<ul>
+<li>一级<ul>
+<li>二级<ul>
+<li>三级<ul>
+<li>四级</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>按TAB进入下一级，按回车回到上一级</p>
+<p><strong>4.无序列表和有序列表互相嵌套</strong></p>
+<ol>
+<li>一级有序</li>
+<li>一级有序<ol>
+<li>二级有序<ul>
+<li>三级无序<ul>
+<li>四级无序<ol>
+<li>五级有序</li>
+<li>五级有序</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="五、区块"><a href="#五、区块" class="headerlink" title="五、区块"></a>五、区块</h2><p>&gt; 文本</p>
+<blockquote>
+<p>文本</p>
+</blockquote>
+<p>区块嵌套</p>
+<blockquote>
+<p>1</p>
+<blockquote>
+<p>2</p>
+<blockquote>
+<p>3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六、代码"><a href="#六、代码" class="headerlink" title="六、代码"></a>六、代码</h2><p><strong>1.一行代码</strong> </p>
+<p>`代码&#96;</p>
+<blockquote>
+<p><code>代码</code></p>
+</blockquote>
+<p><strong>2.代码段</strong></p>
+<p>`&#96;&#96;</p>
+<p>代码</p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">代码</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><p><strong>1.链接网页</strong></p>
+<p>[链接文字](链接地址)   用英文括号</p>
+<p>&lt;链接地址&gt;</p>
+<blockquote>
+<p><a href="https://www.baidu.com/">百度</a></p>
+<p><a href="https://www.baidu.com/">https://www.baidu.com</a></p>
+</blockquote>
+<p><strong>2.链接本地文件</strong></p>
+<blockquote>
+<p><a href="./hello-world.md">hello-world.md</a></p>
+</blockquote>
+<p><strong>3.页内跳转</strong></p>
+<blockquote>
+<p><a href="##%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98">调转到标题</a></p>
+</blockquote>
+<h2 id="八、图片"><a href="#八、图片" class="headerlink" title="八、图片"></a>八、图片</h2><p><strong>1.![alt 属性文本](图片地址)</strong></p>
+<blockquote>
+<img src="C:\Users\吴淑敏\Pictures\1.png" alt="本地图片" style="zoom:25%;" />
+</blockquote>
+<p><strong>2.![alt 属性文本](图片地址 “可选标题”)</strong></p>
+<blockquote>
+<img src="C:\Users\吴淑敏\Pictures\1.png" alt="alt 属性文本" style="zoom:33%;" />
+</blockquote>
+<p><strong>3.直接粘贴复制图片</strong></p>
+<img src="image/image-20230605200621280.png" alt="image-20230605200621280" style="zoom: 50%;" />
+
+<h2 id="九、表格"><a href="#九、表格" class="headerlink" title="九、表格"></a>九、表格</h2><p><strong>1.Markdown 制作表格使用<code>|</code>来分隔不同的单元格，使用<code>-</code>来分隔表头和其他行。</strong></p>
+<table>
+<thead>
+<tr>
+<th>|表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><strong>2.设置对其方式</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">|左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">中间对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">中间对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+</blockquote>
+<h2 id="十、Typora与HTML"><a href="#十、Typora与HTML" class="headerlink" title="十、Typora与HTML"></a>十、Typora与HTML</h2><p><strong>1.字体颜色与大小</strong></p>
+<p>&lt;font size&#x3D;3 color&#x3D;”red”&gt;字体颜色为红色，大小为3</font></p>
+<p>&lt;font size&#x3D;4 color&#x3D;”blue”&gt;字体颜色为蓝色，大小为4</font></p>
+<p>&lt;font size&#x3D;6 color&#x3D;”violet”&gt;字体颜色为紫罗兰，大小为6</font></p>
+<blockquote>
+<p><font size=3 color="red">字体颜色为红色，大小为3</font></p>
+</blockquote>
+<blockquote>
+<p><font size=4 color="blue">字体颜色为蓝色，大小为4</font></p>
+</blockquote>
+<blockquote>
+<p><font size=6 color="violet">字体颜色为紫罗兰，大小为6</font></p>
+</blockquote>
+<p><strong>2.对齐方式</strong></p>
+<p>&lt;p align&#x3D;”left”&gt;左对齐</p></p>
+<p>&lt;p align&#x3D;”center”&gt;中间对齐</p></p>
+<p>&lt;p align&#x3D;”right”&gt;右对齐</p></p>
+<blockquote>
+<p align="left">左对齐</p>
+<p align="center">中间对齐</p>
+<p align="right">右对齐</p>
+</blockquote>
+<p><strong>3.插入图像</strong></p>
+<p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” &#x2F;&gt;</p>
+<img src="./image/image-20230605200621280.png" style="zoom:33%;" />
+
+
+
+<p><strong>4.改变图像大小</strong></p>
+<p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;100 height&#x3D;100&#x2F;&gt;</p>
+<img src="./image/image-20230605200621280.png" width=100 height=100/>
+
+<p><strong>5.改变图片的位置</strong></p>
+<p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;30 height&#x3D;30 style&#x3D;”float:left”&#x2F;&gt;图片在左边<br>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;30 height&#x3D;30 style&#x3D;”float:right”&#x2F;&gt;图片在右边</p>
+<p><img src="./image/image-20230605200621280.png" width=30 height=30 style="float:left"/>图片在左边<br><img src="./image/image-20230605200621280.png" width=30 height=30 style="float:right"/>图片在右边</p>
+<h2 id="扩展用法"><a href="#扩展用法" class="headerlink" title="扩展用法"></a>扩展用法</h2><p><strong>1.emoji表情</strong></p>
+<p>:happy:    :happy:</p>
+<p>:crab:    :crab:</p>
+<p>:horse:     :horse:</p>
+<p><strong>2.插入目录</strong></p>
+<p>[toc]</p>
+<p><strong>3.文本高亮</strong></p>
+<p>=&#x3D;文本&#x3D;&#x3D;</p>
+<p>&#x3D;&#x3D;文本&#x3D;&#x3D;</p>
+<p>这个功能可在偏好设置 –&gt; Markdown扩展语法中设置。</p>
+<p><strong>4.上下标</strong></p>
+<p>H~2~O表示H<del>2</del>O</p>
+<p>X^2^表示X^2^</p>
+<p>参考文献：<a href="https://blog.csdn.net/qq_41261251/article/details/102817673?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168592792616800182137679%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168592792616800182137679&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-102817673-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&utm_term=Typora&spm=1018.2226.3001.4187">最齐的Typora使用教程</a></p>
+]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo命令总结</title>
+    <url>/posts/a5cd3e20/</url>
+    <content><![CDATA[<p>[toc]</p>
+<h3 id="hexo-init-folder"><a href="#hexo-init-folder" class="headerlink" title="hexo init [folder]"></a><strong><code>hexo init [folder]</code></strong></h3><p>Hexo初始化，[folder]-初始化的文件夹</p>
+<p>初始化本地：<code>hexo init .</code></p>
+<h3 id="hexo-new-layout-lt-title-gt"><a href="#hexo-new-layout-lt-title-gt" class="headerlink" title="hexo new [layout] &lt;title&gt;"></a><strong><code>hexo new [layout] &lt;title&gt;</code></strong></h3><p>新建文章或页面，[layout]-文章或页面的模板，&lt;title&gt;-表示标题</p>
+<p><code>hexo new post 001</code>，新建了一个标题为001的文章</p>
+<p><code>hexo new page 001</code>，新建了一个标题为001的页面</p>
+<p>如果你不想在终端中新建文章或页面，可以直接在 <code>博客根目录/source/_post/</code> 目录下创建 Markdown 文件写<strong>文章</strong>。或者在 <code>博客根目录/source/</code> 目录下创建一个文件夹，然后在新文件夹里创建 <code>index.md</code> 写<strong>页面</strong>即可。</p>
+<blockquote>
+<p>提醒</p>
+<p>当你新建页面后，页面的链接就是你页面所在的文件夹的名字。</p>
+<p>例如：我在 <code>博客根目录/source/</code> 下新建了一个名为 <code>test</code> 的文件夹，然后在 <code>test</code> 文件夹下写 Markdown 文件，那么这个页面的链接就是 <code>网址/test</code> 。</p>
+</blockquote>
+<h3 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo server"></a><strong><code>hexo server</code></strong></h3><p>在本地查看网站</p>
+<blockquote>
+<p>提醒</p>
+<p>如果你想要换端口号（上面的 <code>8080</code> 就是端口号），可以在终端里输入 <code>hexo s -p 端口号</code> 。</p>
+</blockquote>
+<h3 id="hexo-generate"><a href="#hexo-generate" class="headerlink" title="hexo generate"></a><strong><code>hexo generate</code></strong></h3><p>生成网站静态文件，生成后网页放在根目录下面的public文件夹里</p>
+<h3 id="hexo-deploy"><a href="#hexo-deploy" class="headerlink" title="hexo deploy"></a><strong><code>hexo deploy</code></strong></h3><p>部署网站，把public下生成好的页面部署到指定的地方</p>
+<h3 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a><strong><code>hexo clean</code></strong></h3><p>清空public文件夹</p>
+<h3 id="hexo-version"><a href="#hexo-version" class="headerlink" title="hexo version"></a><strong><code>hexo version</code></strong></h3><p>输出版本号</p>
+]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
