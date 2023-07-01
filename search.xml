@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>js APIs</title>
-    <url>/posts/363fb101/</url>
+    <url>/posts/597e599c/</url>
     <content><![CDATA[<h3 id="Web-API基本认知"><a href="#Web-API基本认知" class="headerlink" title="Web API基本认知"></a>Web API基本认知</h3><h5 id="1、什么是DOM"><a href="#1、什么是DOM" class="headerlink" title="1、什么是DOM"></a>1、什么是DOM</h5><p>DOM是浏览器提供的一套专门用来操作网页内容的功能，开发网页内容特效和实现用户交互</p>
 <h5 id="2、DOM树"><a href="#2、DOM树" class="headerlink" title="2、DOM树"></a>2、DOM树</h5><p>将 HTML 文档以树状结构直观的表现出来，我们称之为文档树或 DOM 树<br>描述网页内容关系的名词<br>作用：文档树直观的体现了标签与标签之间的关系</p>
 <h5 id="3、DOM对象"><a href="#3、DOM对象" class="headerlink" title="3、DOM对象"></a>3、DOM对象</h5><ul>
@@ -323,10 +323,11 @@
     <title>js基础语法</title>
     <url>/posts/6e47d1b5/</url>
     <content><![CDATA[<h3 id="js介绍"><a href="#js介绍" class="headerlink" title="js介绍"></a>js介绍</h3><h5 id="1、js组成"><a href="#1、js组成" class="headerlink" title="1、js组成"></a>1、js组成</h5><p><img src="D:\blog\myblog\source_posts\image\js基础语法_js结构.png" alt="image-20230627101511893"></p>
-<pre><code>* **ECMAScript** 规定了js基础语法核心知识
-* **DOM** 操作文档，比如对页面元素进行移动、大小、添加删除等操作
-* **BOM** 操作浏览器，比如页面弹窗，检测窗口宽度、存储数据到浏览器等
-</code></pre>
+<ul>
+<li><strong>ECMAScript</strong> 规定了js基础语法核心知识</li>
+<li><strong>DOM</strong> 操作文档，比如对页面元素进行移动、大小、添加删除等操作</li>
+<li><strong>BOM</strong> 操作浏览器，比如页面弹窗，检测窗口宽度、存储数据到浏览器等</li>
+</ul>
 <h5 id="2、js网站"><a href="#2、js网站" class="headerlink" title="2、js网站"></a>2、js网站</h5><p>​	<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">MDN</a></p>
 <h5 id="3、js的书写位置"><a href="#3、js的书写位置" class="headerlink" title="3、js的书写位置"></a>3、js的书写位置</h5><ul>
 <li><p>内部js</p>
