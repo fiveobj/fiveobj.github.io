@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
 <meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
 <meta property="article:published_time" content="2023-06-10T08:03:19.573Z">
-<meta property="article:modified_time" content="2023-06-09T11:48:33.395Z">
+<meta property="article:modified_time" content="2023-06-28T08:23:09.616Z">
 <meta property="article:author" content="WuSM">
 <meta property="article:tag" content="Typora">
 <meta name="twitter:card" content="summary">
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  843
+                  1.3k
                 </span>
               
 
@@ -443,7 +443,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -728,6 +728,351 @@
 <p><strong>5.改变图片的位置</strong></p>
 <p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;30 height&#x3D;30 style&#x3D;”float:left”&#x2F;&gt;图片在左边<br>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;30 height&#x3D;30 style&#x3D;”float:right”&#x2F;&gt;图片在右边</p>
 <p><img src="./image/image-20230605200621280.png" width=30 height=30 style="float:left"/>图片在左边<br><img src="./image/image-20230605200621280.png" width=30 height=30 style="float:right"/>图片在右边</p>
+<h2 id="十一、数学公式"><a href="#十一、数学公式" class="headerlink" title="十一、数学公式"></a>十一、数学公式</h2><p><strong>打开数学公式编辑栏</strong></p>
+<ul>
+<li>点击“段落”—&gt;“公式块”</li>
+<li>快捷键Ctrl+Shift+m</li>
+<li>“$$”+回车</li>
+<li>行间公式：点击“文件” –&gt; “偏好设置” –&gt; “Markdown” –&gt; “Markdown扩展语法” —&gt; 勾选 “内联公式（例：$ \LaTeX $）”</li>
+</ul>
+<p><strong>常用公式</strong></p>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>Markdown</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上标</td>
+<td>x^2</td>
+<td>$x^2$</td>
+</tr>
+<tr>
+<td>下标</td>
+<td>y_1</td>
+<td>$y_1$</td>
+</tr>
+<tr>
+<td>分式</td>
+<td>\frac{1}{2}<br />1&#x2F;2</td>
+<td>$\frac{1}{2}$<br />$1&#x2F;2$</td>
+</tr>
+<tr>
+<td>省略号</td>
+<td>\cdots</td>
+<td>$\cdots$</td>
+</tr>
+<tr>
+<td>开根号</td>
+<td>\sqrt{2}</td>
+<td>$\sqrt{2}$</td>
+</tr>
+<tr>
+<td>矢量</td>
+<td>\vec{a}</td>
+<td>$\vec{a}$</td>
+</tr>
+<tr>
+<td>积分</td>
+<td>\int{x}dx<br />\int_{1}^{2}{x}dx</td>
+<td>$\int{x}dx$<br />$\int_{1}^{2}{x}dx$</td>
+</tr>
+<tr>
+<td>极限</td>
+<td>\lim{a+b}<br />\lim_{n\rightarrow+\infty}{a+b}</td>
+<td>$\lim{a+b}$<br />$\lim_{n\rightarrow+\infty}{a+b}$</td>
+</tr>
+<tr>
+<td>累加</td>
+<td>\sum{a}<br />\sum_{n&#x3D;1}^{100}{a_n}</td>
+<td>$\sum{a}$<br />$\sum_{n&#x3D;1}^{100}{a_n}$</td>
+</tr>
+<tr>
+<td>累乘</td>
+<td>\prod{x}<br />\prod_{n&#x3D;1}^{99}{x_n}</td>
+<td>$\prod{x}$<br />$\prod_{n&#x3D;1}^{99}{x_n}$</td>
+</tr>
+<tr>
+<td>三角公式</td>
+<td>\sin</td>
+<td>$\sin$</td>
+</tr>
+<tr>
+<td>对角函数</td>
+<td>\ln2<br />\log_28<br />\lg10</td>
+<td>$\ln2$<br />$\log_28$<br />$\lg10$</td>
+</tr>
+<tr>
+<td>花括号</td>
+<td>c(u)&#x3D;\begin{cases} \sqrt\frac{1}{N}，u&#x3D;0\ \sqrt\frac{2}{N}， u\neq0\end{cases}</td>
+<td>$c(u)&#x3D;\begin{cases} \sqrt\frac{1}{N}，u&#x3D;0\ \sqrt\frac{2}{N}， u\neq0\end{cases}  $</td>
+</tr>
+<tr>
+<td>空格</td>
+<td>a \quad b</td>
+<td>$a \quad b$</td>
+</tr>
+<tr>
+<td>矩阵</td>
+<td>a &#x3D; \left[ \matrix{  \alpha_1 &amp; test1\  \alpha_2 &amp; test2\  \alpha_3 &amp; test3  } \right]</td>
+<td>$a &#x3D; \left[ \matrix{  \alpha_1 &amp; test1\  \alpha_2 &amp; test2\  \alpha_3 &amp; test3  } \right]$</td>
+</tr>
+</tbody></table>
+<p><strong>希腊字母</strong></p>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\alpha</td>
+<td>$\alpha$</td>
+<td>\tau</td>
+<td>$\tau$</td>
+</tr>
+<tr>
+<td>\beta</td>
+<td>$\beta$</td>
+<td>\upsilon</td>
+<td>$\upsilon$</td>
+</tr>
+<tr>
+<td>\gamma</td>
+<td>$\gamma$</td>
+<td>\phi</td>
+<td>$\phi$</td>
+</tr>
+<tr>
+<td>\delta</td>
+<td>$\delta$</td>
+<td>\varphi</td>
+<td>$\varphi$</td>
+</tr>
+<tr>
+<td>\epsilon</td>
+<td>$\epsilon$</td>
+<td>\chi</td>
+<td>$\chi$</td>
+</tr>
+<tr>
+<td>\varepsilon</td>
+<td>$\varepsilon$</td>
+<td>\psi</td>
+<td>$\psi$</td>
+</tr>
+<tr>
+<td>\zeta</td>
+<td>$\zeta$</td>
+<td>\omega</td>
+<td>$\omega$</td>
+</tr>
+<tr>
+<td>\eta</td>
+<td>$\eta$</td>
+<td>\Omega</td>
+<td>$\Omega$</td>
+</tr>
+<tr>
+<td>\theta</td>
+<td>$\theta$</td>
+<td>\Psi</td>
+<td>$\Psi$</td>
+</tr>
+<tr>
+<td>\iota</td>
+<td>$\iota$</td>
+<td>\Phi</td>
+<td>$\Phi$</td>
+</tr>
+<tr>
+<td>\kappa</td>
+<td>$\kappa$</td>
+<td>\Upsilon</td>
+<td>$\Upsilon$</td>
+</tr>
+<tr>
+<td>\lambda</td>
+<td>$\lambda$</td>
+<td>\Sigma</td>
+<td>$\Sigma$</td>
+</tr>
+<tr>
+<td>\mu</td>
+<td>$\mu$</td>
+<td>\Pi</td>
+<td>$\Pi$</td>
+</tr>
+<tr>
+<td>\nu</td>
+<td>$\nu$</td>
+<td>\Xi</td>
+<td>$\Xi$</td>
+</tr>
+<tr>
+<td>\xi</td>
+<td>$\xi$</td>
+<td>\Lambda</td>
+<td>$\Lambda$</td>
+</tr>
+<tr>
+<td>\omicron</td>
+<td>$\omicron$</td>
+<td>\Theta</td>
+<td>$\Theta$</td>
+</tr>
+<tr>
+<td>\pi</td>
+<td>$\pi$</td>
+<td>\Delta</td>
+<td>$\Delta$</td>
+</tr>
+<tr>
+<td>\rho</td>
+<td>$\rho$</td>
+<td>\Gamma</td>
+<td>$\Gamma$</td>
+</tr>
+<tr>
+<td>\sigma</td>
+<td>$\sigma$</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>$A$</td>
+<td>K</td>
+<td>$K$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$B$</td>
+<td>M</td>
+<td>$M$</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$E$</td>
+<td>N</td>
+<td>$N$</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>$Z$</td>
+<td>O</td>
+<td>$O$</td>
+</tr>
+<tr>
+<td>H</td>
+<td>$H$</td>
+<td>P</td>
+<td>$P$</td>
+</tr>
+<tr>
+<td>I</td>
+<td>$I$</td>
+<td>T</td>
+<td>$T$</td>
+</tr>
+<tr>
+<td>X</td>
+<td>$X$</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>$$<br>\lg10<br>$$<br><strong>关系运算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\pm</td>
+<td>$\pm$</td>
+<td>\neq</td>
+<td>$\neq$</td>
+</tr>
+<tr>
+<td>\times</td>
+<td>$\times$</td>
+<td>\equiv</td>
+<td>$\equiv$</td>
+</tr>
+<tr>
+<td>\cdot</td>
+<td>$\cdot$</td>
+<td>\leq</td>
+<td>$\leq$</td>
+</tr>
+<tr>
+<td>\div</td>
+<td>$\div$</td>
+<td>\geq</td>
+<td>$\geq$</td>
+</tr>
+</tbody></table>
+<p><strong>其他特殊字符</strong></p>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\forall</td>
+<td>$\forall$</td>
+<td>\bot</td>
+<td>$\bot$</td>
+</tr>
+<tr>
+<td>\infty</td>
+<td>$\infty$</td>
+<td>\angle</td>
+<td>$\angle$</td>
+</tr>
+<tr>
+<td>\emptyset</td>
+<td>$\emptyset$</td>
+<td>\because</td>
+<td>$\because$</td>
+</tr>
+<tr>
+<td>\exists</td>
+<td>$\exists$</td>
+<td>\therefore</td>
+<td>$\therefore$</td>
+</tr>
+<tr>
+<td>\nabla</td>
+<td>$\nabla$</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 <h2 id="扩展用法"><a href="#扩展用法" class="headerlink" title="扩展用法"></a>扩展用法</h2><p><strong>1.emoji表情</strong></p>
 <p>:happy:    :happy:</p>
 <p>:crab:    :crab:</p>
@@ -796,6 +1141,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/6e47d1b5/" rel="prev" title="js基础语法">
+                js基础语法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -872,7 +1221,7 @@
               
                 <a href="/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -883,7 +1232,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -894,7 +1243,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -918,19 +1267,23 @@
       
       
         <li class="recent_posts_li">
+          <a href="/posts/363fb101/" title="js APIs" target="_blank">js APIs</a>
+        </li>
+      
+        <li class="recent_posts_li">
+          <a href="/posts/4ba92e57/" title="多元回归分析" target="_blank">多元回归分析</a>
+        </li>
+      
+        <li class="recent_posts_li">
+          <a href="/posts/6e47d1b5/" title="js基础语法" target="_blank">js基础语法</a>
+        </li>
+      
+        <li class="recent_posts_li">
           <a href="/posts/363fb101/" title="Typora 语法详解" target="_blank">Typora 语法详解</a>
         </li>
       
         <li class="recent_posts_li">
           <a href="/posts/0/" title="" target="_blank"></a>
-        </li>
-      
-        <li class="recent_posts_li">
-          <a href="/posts/a5cd3e20/" title="Hexo命令总结" target="_blank">Hexo命令总结</a>
-        </li>
-      
-        <li class="recent_posts_li">
-          <a href="/posts/4a17b156/" title="Hello World" target="_blank">Hello World</a>
         </li>
       
     </ul>
@@ -959,7 +1312,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Typora%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">Typora语法详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">一、标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AD%97%E4%BD%93"><span class="nav-number">2.2.</span> <span class="nav-text">二、字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%BA%BF"><span class="nav-number">2.3.</span> <span class="nav-text">三、线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%88%97%E8%A1%A8"><span class="nav-number">2.4.</span> <span class="nav-text">四、列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%8C%BA%E5%9D%97"><span class="nav-number">2.5.</span> <span class="nav-text">五、区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E4%BB%A3%E7%A0%81"><span class="nav-number">2.6.</span> <span class="nav-text">六、代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E9%93%BE%E6%8E%A5"><span class="nav-number">2.7.</span> <span class="nav-text">七、链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB%E3%80%81%E5%9B%BE%E7%89%87"><span class="nav-number">2.8.</span> <span class="nav-text">八、图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E3%80%81%E8%A1%A8%E6%A0%BC"><span class="nav-number">2.9.</span> <span class="nav-text">九、表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E3%80%81Typora%E4%B8%8EHTML"><span class="nav-number">2.10.</span> <span class="nav-text">十、Typora与HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E7%94%A8%E6%B3%95"><span class="nav-number">2.11.</span> <span class="nav-text">扩展用法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Typora%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">Typora语法详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">一、标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AD%97%E4%BD%93"><span class="nav-number">2.2.</span> <span class="nav-text">二、字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%BA%BF"><span class="nav-number">2.3.</span> <span class="nav-text">三、线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%88%97%E8%A1%A8"><span class="nav-number">2.4.</span> <span class="nav-text">四、列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%8C%BA%E5%9D%97"><span class="nav-number">2.5.</span> <span class="nav-text">五、区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E4%BB%A3%E7%A0%81"><span class="nav-number">2.6.</span> <span class="nav-text">六、代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E9%93%BE%E6%8E%A5"><span class="nav-number">2.7.</span> <span class="nav-text">七、链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB%E3%80%81%E5%9B%BE%E7%89%87"><span class="nav-number">2.8.</span> <span class="nav-text">八、图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E3%80%81%E8%A1%A8%E6%A0%BC"><span class="nav-number">2.9.</span> <span class="nav-text">九、表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E3%80%81Typora%E4%B8%8EHTML"><span class="nav-number">2.10.</span> <span class="nav-text">十、Typora与HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="nav-number">2.11.</span> <span class="nav-text">十一、数学公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E7%94%A8%E6%B3%95"><span class="nav-number">2.12.</span> <span class="nav-text">扩展用法</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -993,7 +1346,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.3k</span>
+    <span title="Site words total count">6.3k</span>
   
 </div>
 
