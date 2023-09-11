@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Typora," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Typora语法详解[toc] 一、标题1.# [一级标题]  一级标题 2.## [二级标题]  二级标题 最多到六级，也可以用Ctrl+1（2，3，……，6）来表示，Ctrl+0 表示段落 二、字体1.斜体： ​	*文本*   ​	_文本_ ​    Ctrl+i  文本  2.粗体： ​	**文本** ​	__文本__  Ctrl+b  文本  三、线1.分割线  +++ *** -–  +">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora 语法详解">
+<meta property="og:url" content="http://example.com/posts/363fb101/index.html">
+<meta property="og:site_name" content="WuSM&#39;s bolgs">
+<meta property="og:description" content="Typora语法详解[toc] 一、标题1.# [一级标题]  一级标题 2.## [二级标题]  二级标题 最多到六级，也可以用Ctrl+1（2，3，……，6）来表示，Ctrl+0 表示段落 二、字体1.斜体： ​	*文本*   ​	_文本_ ​    Ctrl+i  文本  2.粗体： ​	**文本** ​	__文本__  Ctrl+b  文本  三、线1.分割线  +++ *** -–  +">
+<meta property="og:locale">
+<meta property="og:image" content="c:\Users\%E5%90%B4%E6%B7%91%E6%95%8F\Pictures\1.png">
+<meta property="og:image" content="c:\Users\%E5%90%B4%E6%B7%91%E6%95%8F\Pictures\1.png">
+<meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
+<meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
+<meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
+<meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
+<meta property="og:image" content="http://example.com/posts/363fb101/image/image-20230605200621280.png">
+<meta property="article:published_time" content="2023-06-10T08:03:19.573Z">
+<meta property="article:modified_time" content="2023-09-11T13:23:21.591Z">
+<meta property="article:author" content="WuSM">
+<meta property="article:tag" content="Typora">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\%E5%90%B4%E6%B7%91%E6%95%8F\Pictures\1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/posts/363fb101/"/>
+
+
+
+
+
+  <title>Typora 语法详解 | WuSM's bolgs</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">WuSM's bolgs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hexo">
+          <a href="/Hexo/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Hexo
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/363fb101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuSM's bolgs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Typora 语法详解</h1>
+        
+
+        <div class="post-meta">
+
+          <span class="post-time">
+	
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-06-10T16:03:19+08:00">
+                2023-06-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.3k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Typora语法详解"><a href="#Typora语法详解" class="headerlink" title="Typora语法详解"></a>Typora语法详解</h1><p>[toc]</p>
+<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><p><strong>1.# [一级标题]</strong></p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></blockquote>
+<p><strong>2.## [二级标题]</strong></p>
+<blockquote>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p>最多到六级，也可以用Ctrl+1（2，3，……，6）来表示，Ctrl+0 表示段落</p>
+<h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><p><strong>1.斜体：</strong></p>
+<p>​	*文本*  </p>
+<p>​	_文本_</p>
+<p>​    Ctrl+i</p>
+<blockquote>
+<p><em>文本</em></p>
+</blockquote>
+<p><strong>2.粗体：</strong></p>
+<p>​	**文本**</p>
+<p>​	__文本__</p>
+<p> Ctrl+b</p>
+<blockquote>
+<p><strong>文本</strong></p>
+</blockquote>
+<h2 id="三、线"><a href="#三、线" class="headerlink" title="三、线"></a>三、线</h2><p><strong>1.分割线</strong> </p>
+<p>+++</p>
+<p>***</p>
+<p>-–</p>
+<blockquote>
+<p>+++</p>
+</blockquote>
+<p><strong>2.删除线</strong></p>
+<p>~~文本~~</p>
+<p>Alt+Shift+5</p>
+<blockquote>
+<p><del>文本</del></p>
+</blockquote>
+<p><strong>3.下划线</strong></p>
+<p>&lt;u&gt;文本&lt;&#x2F;u&gt;</p>
+<p>Ctrl+U</p>
+<blockquote>
+<p><u>文本</u></p>
+</blockquote>
+<h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><p><strong>1.无序列表</strong></p>
+<p>* [文本]</p>
+<p>+ [文本]</p>
+<p>- [文本]</p>
+<blockquote>
+<ul>
+<li>文本</li>
+</ul>
+</blockquote>
+<p><strong>2.有序列表</strong></p>
+<p>[数字]. [文本]</p>
+<blockquote>
+<ol>
+<li>文本</li>
+<li>文本</li>
+</ol>
+</blockquote>
+<p>数字并不重要</p>
+<p><strong>3.嵌套列表</strong></p>
+<p>* 一级 （回车）</p>
+<p>TAB * 二级  （回车）</p>
+<p>TAB TAB * 三级</p>
+<blockquote>
+<ul>
+<li>一级<ul>
+<li>二级<ul>
+<li>三级<ul>
+<li>四级</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>按TAB进入下一级，按回车回到上一级</p>
+<p><strong>4.无序列表和有序列表互相嵌套</strong></p>
+<ol>
+<li>一级有序</li>
+<li>一级有序<ol>
+<li>二级有序<ul>
+<li>三级无序<ul>
+<li>四级无序<ol>
+<li>五级有序</li>
+<li>五级有序</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="五、区块"><a href="#五、区块" class="headerlink" title="五、区块"></a>五、区块</h2><p>&gt; 文本</p>
+<blockquote>
+<p>文本</p>
+</blockquote>
+<p>区块嵌套</p>
+<blockquote>
+<p>1</p>
+<blockquote>
+<p>2</p>
+<blockquote>
+<p>3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六、代码"><a href="#六、代码" class="headerlink" title="六、代码"></a>六、代码</h2><p><strong>1.一行代码</strong> </p>
+<p>`代码&#96;</p>
+<blockquote>
+<p><code>代码</code></p>
+</blockquote>
+<p><strong>2.代码段</strong></p>
+<p>`&#96;&#96;</p>
+<p>代码</p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h2><p><strong>1.链接网页</strong></p>
+<p>[链接文字](链接地址)   用英文括号</p>
+<p>&lt;链接地址&gt;</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a></p>
+</blockquote>
+<p><strong>2.链接本地文件</strong></p>
+<blockquote>
+<p><a href="./hello-world.md">hello-world.md</a></p>
+</blockquote>
+<p><strong>3.页内跳转</strong></p>
+<blockquote>
+<p><a href="##%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98">调转到标题</a></p>
+</blockquote>
+<h2 id="八、图片"><a href="#八、图片" class="headerlink" title="八、图片"></a>八、图片</h2><p><strong>1.![alt 属性文本](图片地址)</strong></p>
+<blockquote>
+<img src="C:\Users\吴淑敏\Pictures\1.png" alt="本地图片" style="zoom:25%;" />
+</blockquote>
+<p><strong>2.![alt 属性文本](图片地址 “可选标题”)</strong></p>
+<blockquote>
+<img src="C:\Users\吴淑敏\Pictures\1.png" alt="alt 属性文本" style="zoom:33%;" />
+</blockquote>
+<p><strong>3.直接粘贴复制图片</strong></p>
+<img src="image/image-20230605200621280.png" alt="image-20230605200621280" style="zoom: 50%;" />
+
+<h2 id="九、表格"><a href="#九、表格" class="headerlink" title="九、表格"></a>九、表格</h2><p><strong>1.Markdown 制作表格使用<code>|</code>来分隔不同的单元格，使用<code>-</code>来分隔表头和其他行。</strong></p>
+<table>
+<thead>
+<tr>
+<th>|表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><strong>2.设置对其方式</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">|左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">中间对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">中间对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+</blockquote>
+<h2 id="十、Typora与HTML"><a href="#十、Typora与HTML" class="headerlink" title="十、Typora与HTML"></a>十、Typora与HTML</h2><p><strong>1.字体颜色与大小</strong></p>
+<p>&lt;font size&#x3D;3 color&#x3D;”red”&gt;字体颜色为红色，大小为3</font></p>
+<p>&lt;font size&#x3D;4 color&#x3D;”blue”&gt;字体颜色为蓝色，大小为4</font></p>
+<p>&lt;font size&#x3D;6 color&#x3D;”violet”&gt;字体颜色为紫罗兰，大小为6</font></p>
+<blockquote>
+<p><font size=3 color="red">字体颜色为红色，大小为3</font></p>
+</blockquote>
+<blockquote>
+<p><font size=4 color="blue">字体颜色为蓝色，大小为4</font></p>
+</blockquote>
+<blockquote>
+<p><font size=6 color="violet">字体颜色为紫罗兰，大小为6</font></p>
+</blockquote>
+<p><strong>2.对齐方式</strong></p>
+<p>&lt;p align&#x3D;”left”&gt;左对齐</p></p>
+<p>&lt;p align&#x3D;”center”&gt;中间对齐</p></p>
+<p>&lt;p align&#x3D;”right”&gt;右对齐</p></p>
+<blockquote>
+<p align="left">左对齐</p>
+<p align="center">中间对齐</p>
+<p align="right">右对齐</p>
+</blockquote>
+<p><strong>3.插入图像</strong></p>
+<p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” &#x2F;&gt;</p>
+<img src="./image/image-20230605200621280.png" style="zoom:33%;" />
+
+
+
+<p><strong>4.改变图像大小</strong></p>
+<p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;100 height&#x3D;100&#x2F;&gt;</p>
+<img src="./image/image-20230605200621280.png" width=100 height=100/>
+
+<p><strong>5.改变图片的位置</strong></p>
+<p>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;30 height&#x3D;30 style&#x3D;”float:left”&#x2F;&gt;图片在左边<br>&lt;img src&#x3D;”.&#x2F;image&#x2F;image-20230605200621280.png” width&#x3D;30 height&#x3D;30 style&#x3D;”float:right”&#x2F;&gt;图片在右边</p>
+<p><img src="./image/image-20230605200621280.png" width=30 height=30 style="float:left"/>图片在左边<br><img src="./image/image-20230605200621280.png" width=30 height=30 style="float:right"/>图片在右边</p>
+<h2 id="十一、数学公式"><a href="#十一、数学公式" class="headerlink" title="十一、数学公式"></a>十一、数学公式</h2><p><strong>打开数学公式编辑栏</strong></p>
+<ul>
+<li>点击“段落”—&gt;“公式块”</li>
+<li>快捷键Ctrl+Shift+m</li>
+<li>“$$”+回车</li>
+<li>行间公式：点击“文件” –&gt; “偏好设置” –&gt; “Markdown” –&gt; “Markdown扩展语法” —&gt; 勾选 “内联公式（例：$ \LaTeX $）”</li>
+</ul>
+<p><strong>常用公式</strong></p>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>Markdown</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上标</td>
+<td>x^2</td>
+<td>$x^2$</td>
+</tr>
+<tr>
+<td>下标</td>
+<td>y_1</td>
+<td>$y_1$</td>
+</tr>
+<tr>
+<td>分式</td>
+<td>\frac{1}{2}<br />1&#x2F;2</td>
+<td>$\frac{1}{2}$<br />$1&#x2F;2$</td>
+</tr>
+<tr>
+<td>省略号</td>
+<td>\cdots</td>
+<td>$\cdots$</td>
+</tr>
+<tr>
+<td>开根号</td>
+<td>\sqrt{2}</td>
+<td>$\sqrt{2}$</td>
+</tr>
+<tr>
+<td>矢量</td>
+<td>\vec{a}</td>
+<td>$\vec{a}$</td>
+</tr>
+<tr>
+<td>积分</td>
+<td>\int{x}dx<br />\int_{1}^{2}{x}dx</td>
+<td>$\int{x}dx$<br />$\int_{1}^{2}{x}dx$</td>
+</tr>
+<tr>
+<td>极限</td>
+<td>\lim{a+b}<br />\lim_{n\rightarrow+\infty}{a+b}</td>
+<td>$\lim{a+b}$<br />$\lim_{n\rightarrow+\infty}{a+b}$</td>
+</tr>
+<tr>
+<td>累加</td>
+<td>\sum{a}<br />\sum_{n&#x3D;1}^{100}{a_n}</td>
+<td>$\sum{a}$<br />$\sum_{n&#x3D;1}^{100}{a_n}$</td>
+</tr>
+<tr>
+<td>累乘</td>
+<td>\prod{x}<br />\prod_{n&#x3D;1}^{99}{x_n}</td>
+<td>$\prod{x}$<br />$\prod_{n&#x3D;1}^{99}{x_n}$</td>
+</tr>
+<tr>
+<td>三角公式</td>
+<td>\sin</td>
+<td>$\sin$</td>
+</tr>
+<tr>
+<td>对角函数</td>
+<td>\ln2<br />\log_28<br />\lg10</td>
+<td>$\ln2$<br />$\log_28$<br />$\lg10$</td>
+</tr>
+<tr>
+<td>花括号</td>
+<td>c(u)&#x3D;\begin{cases} \sqrt\frac{1}{N}，u&#x3D;0\ \sqrt\frac{2}{N}， u\neq0\end{cases}</td>
+<td>$c(u)&#x3D;\begin{cases} \sqrt\frac{1}{N}，u&#x3D;0\ \sqrt\frac{2}{N}， u\neq0\end{cases}  $</td>
+</tr>
+<tr>
+<td>空格</td>
+<td>a \quad b</td>
+<td>$a \quad b$</td>
+</tr>
+<tr>
+<td>矩阵</td>
+<td>a &#x3D; \left[ \matrix{  \alpha_1 &amp; test1\  \alpha_2 &amp; test2\  \alpha_3 &amp; test3  } \right]</td>
+<td>$a &#x3D; \left[ \matrix{  \alpha_1 &amp; test1\  \alpha_2 &amp; test2\  \alpha_3 &amp; test3  } \right]$</td>
+</tr>
+</tbody></table>
+<p><strong>希腊字母</strong></p>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\alpha</td>
+<td>$\alpha$</td>
+<td>\tau</td>
+<td>$\tau$</td>
+</tr>
+<tr>
+<td>\beta</td>
+<td>$\beta$</td>
+<td>\upsilon</td>
+<td>$\upsilon$</td>
+</tr>
+<tr>
+<td>\gamma</td>
+<td>$\gamma$</td>
+<td>\phi</td>
+<td>$\phi$</td>
+</tr>
+<tr>
+<td>\delta</td>
+<td>$\delta$</td>
+<td>\varphi</td>
+<td>$\varphi$</td>
+</tr>
+<tr>
+<td>\epsilon</td>
+<td>$\epsilon$</td>
+<td>\chi</td>
+<td>$\chi$</td>
+</tr>
+<tr>
+<td>\varepsilon</td>
+<td>$\varepsilon$</td>
+<td>\psi</td>
+<td>$\psi$</td>
+</tr>
+<tr>
+<td>\zeta</td>
+<td>$\zeta$</td>
+<td>\omega</td>
+<td>$\omega$</td>
+</tr>
+<tr>
+<td>\eta</td>
+<td>$\eta$</td>
+<td>\Omega</td>
+<td>$\Omega$</td>
+</tr>
+<tr>
+<td>\theta</td>
+<td>$\theta$</td>
+<td>\Psi</td>
+<td>$\Psi$</td>
+</tr>
+<tr>
+<td>\iota</td>
+<td>$\iota$</td>
+<td>\Phi</td>
+<td>$\Phi$</td>
+</tr>
+<tr>
+<td>\kappa</td>
+<td>$\kappa$</td>
+<td>\Upsilon</td>
+<td>$\Upsilon$</td>
+</tr>
+<tr>
+<td>\lambda</td>
+<td>$\lambda$</td>
+<td>\Sigma</td>
+<td>$\Sigma$</td>
+</tr>
+<tr>
+<td>\mu</td>
+<td>$\mu$</td>
+<td>\Pi</td>
+<td>$\Pi$</td>
+</tr>
+<tr>
+<td>\nu</td>
+<td>$\nu$</td>
+<td>\Xi</td>
+<td>$\Xi$</td>
+</tr>
+<tr>
+<td>\xi</td>
+<td>$\xi$</td>
+<td>\Lambda</td>
+<td>$\Lambda$</td>
+</tr>
+<tr>
+<td>\omicron</td>
+<td>$\omicron$</td>
+<td>\Theta</td>
+<td>$\Theta$</td>
+</tr>
+<tr>
+<td>\pi</td>
+<td>$\pi$</td>
+<td>\Delta</td>
+<td>$\Delta$</td>
+</tr>
+<tr>
+<td>\rho</td>
+<td>$\rho$</td>
+<td>\Gamma</td>
+<td>$\Gamma$</td>
+</tr>
+<tr>
+<td>\sigma</td>
+<td>$\sigma$</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>$A$</td>
+<td>K</td>
+<td>$K$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$B$</td>
+<td>M</td>
+<td>$M$</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$E$</td>
+<td>N</td>
+<td>$N$</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>$Z$</td>
+<td>O</td>
+<td>$O$</td>
+</tr>
+<tr>
+<td>H</td>
+<td>$H$</td>
+<td>P</td>
+<td>$P$</td>
+</tr>
+<tr>
+<td>I</td>
+<td>$I$</td>
+<td>T</td>
+<td>$T$</td>
+</tr>
+<tr>
+<td>X</td>
+<td>$X$</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>$$<br>\lg10<br>$$<br><strong>关系运算符</strong></p>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\pm</td>
+<td>$\pm$</td>
+<td>\neq</td>
+<td>$\neq$</td>
+</tr>
+<tr>
+<td>\times</td>
+<td>$\times$</td>
+<td>\equiv</td>
+<td>$\equiv$</td>
+</tr>
+<tr>
+<td>\cdot</td>
+<td>$\cdot$</td>
+<td>\leq</td>
+<td>$\leq$</td>
+</tr>
+<tr>
+<td>\div</td>
+<td>$\div$</td>
+<td>\geq</td>
+<td>$\geq$</td>
+</tr>
+</tbody></table>
+<p><strong>其他特殊字符</strong></p>
+<table>
+<thead>
+<tr>
+<th>md</th>
+<th>符号</th>
+<th>md</th>
+<th>符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\forall</td>
+<td>$\forall$</td>
+<td>\bot</td>
+<td>$\bot$</td>
+</tr>
+<tr>
+<td>\infty</td>
+<td>$\infty$</td>
+<td>\angle</td>
+<td>$\angle$</td>
+</tr>
+<tr>
+<td>\emptyset</td>
+<td>$\emptyset$</td>
+<td>\because</td>
+<td>$\because$</td>
+</tr>
+<tr>
+<td>\exists</td>
+<td>$\exists$</td>
+<td>\therefore</td>
+<td>$\therefore$</td>
+</tr>
+<tr>
+<td>\nabla</td>
+<td>$\nabla$</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="扩展用法"><a href="#扩展用法" class="headerlink" title="扩展用法"></a>扩展用法</h2><p><strong>1.emoji表情</strong></p>
+<p>:happy:    :happy:</p>
+<p>:crab:    :crab:</p>
+<p>:horse:     :horse:</p>
+<p><strong>2.插入目录</strong></p>
+<p>[toc]</p>
+<p><strong>3.文本高亮</strong></p>
+<p>=&#x3D;文本&#x3D;&#x3D;</p>
+<p>&#x3D;&#x3D;文本&#x3D;&#x3D;</p>
+<p>这个功能可在偏好设置 –&gt; Markdown扩展语法中设置。</p>
+<p><strong>4.上下标</strong></p>
+<p>H~2~O表示H<del>2</del>O</p>
+<p>X^2^表示X^2^</p>
+<p>参考文献：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41261251/article/details/102817673?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168592792616800182137679%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168592792616800182137679&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-102817673-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&utm_term=Typora&spm=1018.2226.3001.4187">最齐的Typora使用教程</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Typora/" rel="tag"># Typora</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/78cd222c/" rel="next" title="Hexo Next主题设置">
+                <i class="fa fa-chevron-left"></i> Hexo Next主题设置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/6e47d1b5/" rel="prev" title="js基础语法">
+                js基础语法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/">
+              
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-block">
+    <div class="links-of-blogroll-title">
+      <!-- modify icon to fire by szw -->
+      <i class="fa fa-history fa-" aria-hidden="true"></i>
+      近期文章
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+      
+        <li class="recent_posts_li">
+          <a href="/posts/ded9e3fe/" title="转义字符" target="_blank">转义字符</a>
+        </li>
+      
+        <li class="recent_posts_li">
+          <a href="/posts/8c296d1/" title="什么是Effect" target="_blank">什么是Effect</a>
+        </li>
+      
+        <li class="recent_posts_li">
+          <a href="/posts/f5ea99d0/" title="react-native-svg-transformer" target="_blank">react-native-svg-transformer</a>
+        </li>
+      
+        <li class="recent_posts_li">
+          <a href="/posts/30f73118/" title="react-native-paper" target="_blank">react-native-paper</a>
+        </li>
+      
+        <li class="recent_posts_li">
+          <a href="/posts/761d71cb/" title="html标签列表、css选择器" target="_blank">html标签列表、css选择器</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Typora%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">Typora语法详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">一、标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AD%97%E4%BD%93"><span class="nav-number">2.2.</span> <span class="nav-text">二、字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%BA%BF"><span class="nav-number">2.3.</span> <span class="nav-text">三、线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%88%97%E8%A1%A8"><span class="nav-number">2.4.</span> <span class="nav-text">四、列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%8C%BA%E5%9D%97"><span class="nav-number">2.5.</span> <span class="nav-text">五、区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E4%BB%A3%E7%A0%81"><span class="nav-number">2.6.</span> <span class="nav-text">六、代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E9%93%BE%E6%8E%A5"><span class="nav-number">2.7.</span> <span class="nav-text">七、链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB%E3%80%81%E5%9B%BE%E7%89%87"><span class="nav-number">2.8.</span> <span class="nav-text">八、图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E3%80%81%E8%A1%A8%E6%A0%BC"><span class="nav-number">2.9.</span> <span class="nav-text">九、表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E3%80%81Typora%E4%B8%8EHTML"><span class="nav-number">2.10.</span> <span class="nav-text">十、Typora与HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="nav-number">2.11.</span> <span class="nav-text">十一、数学公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E7%94%A8%E6%B3%95"><span class="nav-number">2.12.</span> <span class="nav-text">扩展用法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WuSM</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">10.7k</span>
+  
+</div>
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "default";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "topRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
+</html>
